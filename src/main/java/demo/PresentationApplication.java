@@ -22,7 +22,7 @@ public class PresentationApplication {
 @RestController
 class PersonController {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/persons")
+    @RequestMapping(value = "/persons", method = RequestMethod.GET)
     public List<Person> listPersons() {
         Person p1 = Person.builder().firstName("Jan Willem").lastName("Jonker").build();
         Person p2 = Person.builder().firstName("Walter").lastName("Bredero").build();
